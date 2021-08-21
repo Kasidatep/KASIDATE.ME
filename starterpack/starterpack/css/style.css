@@ -45,6 +45,11 @@ h5{
     color: cyan;
     border: 2px darkolivegreen;
 }
+.align-left{
+  text-align: left;
+  margin-left: auto;
+
+}
 .vaclogo{
     background-color: rgb(255, 255, 255);
     padding: 1%;
