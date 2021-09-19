@@ -23,11 +23,12 @@
   <!-- put the form element and form contols after here-->
 
   <p>Contest Entry Information</p>
-  <form action="contest.php" method="POST">
+  <form action="cont.php" method="GET">
     <ul>
       <li><label for="name">Name:</label> <input type="text" name="name" id="name"></li>
-      <li><label for="email">Email Address:</label> <input type="text" name="email" id="email"></li>
-      <li><label for="phone">Telephone Number:</label> <input type="text" name="phone" id="phone"></li>
+      <li><label for="email">Email Address:</label> <input type="email" name="email" id="email"></li>
+      <li><label for="phone">Telephone Number:</label> <input type="tel" name="phone" id="phone"></li>
+      <li><label for="password">Password:</label> <input type="password" name="password" id="password"></li>
       <li><label for="story">My shoes are SO old…</label> </li>
       <li> <textarea name="story" id="story" rows="4" cols="60" maxlength="300"
           placeholder="No more than 300 character long"></textarea> </li>

@@ -366,7 +366,54 @@ button.main-button {
 button.main-button:hover {
   background-color: #ff589e;
 }
+     
+.scallout{
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+.scallout img{
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  border-radius: 8px;
+}
 
+
+/* Callout header */
+.scallout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+}
+ 
+.scallout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+/* Close button */
+.sclosebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 65px;
+  font-weight: 500;
+  cursor: pointer;
+  
+}
+
+/* Change color on mouse-over */
+.sclosebtn:hover {
+  color: lightgrey;
+}
 
 /* 
 ---------------------------------------------
