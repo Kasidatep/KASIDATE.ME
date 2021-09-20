@@ -681,6 +681,16 @@ header
     display: flex !important;
   }
 }
+.version-web{
+  background-color: #3B566E;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 3px;
+  padding-right: 3px;
+
+}
 
 /* 
 ---------------------------------------------
