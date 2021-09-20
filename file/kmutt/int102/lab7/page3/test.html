@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> </title>
+        <style>
+           body {
+             margin-top:  100px;
+             margin-left: 25%;
+             margin-right: 25%;
+             font-family: Verdana ;
+             font-size: 1.25em ;
+           }
+           .topic {
+              color: darkorange ;
+           }
+           img {
+              margin: 10px auto 20px ;
+              display: block ;
+            }
+            ul{
+			      list-style-type: none;
+		      	}
+        </style>
+	</head>
+	<body>
+้้ <h1>Data Science Test</h1>
+<p>There are three questions. Answer all questions and press Send.</p>
+<form action="../showanswer.php" method="post">
+  <ol>
+    <li>
+      Which disclipline is not in Data Scientist?
+      <ul>
+        <li><input type="radio" name="question1" id="11" value="1"> <label for="11">Data Engineering</label></li> 
+        <li><input type="radio" name="question1" id="12" value="2"> <label for="12">Visualization</label></li> 
+        <li><input type="radio" name="question1" id="13" value="3"> <label for="13">Statistics</label></li> 
+        <li><input type="radio" name="question1" id="14" value="4"> <label for="14">Computer Graphic</label></li> 
+      </ul>
+    </li>
+    <li>
+      Which skills and expertise should Data Scientists should have? (Choose all possible)
+      <ul>
+        <li> <input type="checkbox" name="question2[]" id="21" value="1"><label for="21">Business/Domain</label> </li>
+        <li> <input type="checkbox" name="question2[]" id="22" value="2"><label for="22">Mathematics</label> </li>
+        <li> <input type="checkbox" name="question2[]" id="23" value="3"><label for="23">Computer Science</label> </li>
+        <li> <input type="checkbox" name="question2[]" id="24" value="4"><label for="24">Communication</label> </li>
+      </ul>
+    </li>
+    <li>
+      List Data Science process and show all tasks in each process.
+      <br>
+      <textarea name="question3" cols="80" rows="5"></textarea>
+    </li>
+  </ol>
+  <input type="submit" value="Send">
+</form>
+  </body>
+</html>
