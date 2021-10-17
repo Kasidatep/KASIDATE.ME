@@ -51,7 +51,44 @@ figure, header, nav, section, article, aside, footer, figcaption {
   line-height: 0;
   height: 0;
 }
-
+.border{
+  background-color: #4615cc;
+  color: #eee;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom:2px ;
+  box-shadow: 10px 11px 23px 1px rgba(0,0,0,0.24);
+  border-radius: 5px 5px 5px 5px;
+}
+.table{
+  text-height: auto;
+  margin: auto;
+  width: 70%;
+ // border: 3px solid rgb(2, 4, 2);
+  padding: 10px;
+  border-bottom-right-radius: 2;
+}
+.table-heading{
+  font-size: 25px;
+  text-align: center;
+  font-weight: bolder;
+}
+table{
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  border: 2px solid rgb(2, 4, 2);
+  border-radius:5;
+}
+td{
+  align-items: center;
+  align-self: center;
+  border: 1px solid rgb(52, 16, 61);
+}
+.name{
+  width: 70%;
+}
 .clearfix {
   display: inline-block;
 }
@@ -423,8 +460,8 @@ header
 .header-area {
   position: fixed;
   top: 30px;
-  left: 0px;
-  right: 0px;
+  left: 50px;
+  right: 50px;
   z-index: 100;
   height: 100px;
   -webkit-transition: all 0.3s ease 0s;
@@ -435,6 +472,8 @@ header
 
 .header-area .main-nav {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 40px;
   min-height: 80px;
   background: #fff;
@@ -501,6 +540,7 @@ header
 }
 
 .header-area .main-nav .menu-trigger {
+  color: #1e1e1e;
   cursor: pointer;
   display: block;
   position: absolute;
@@ -598,6 +638,7 @@ header
 
 .header-area.header-sticky .logo {
   margin-top: 25px;
+  text-align: center;
 }
 
 .header-area.header-sticky .nav {
