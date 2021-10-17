@@ -38,10 +38,7 @@
 
                 <div class="content-panel">
                     <div class="content-header-wrapper">
-                        <h2 class="title">My Drive</h2>
-                        <div class="actions">
-                            <a href="https://github.com/Kasidatep/KASIDATE.ME/tree/main/file"><button class="btn btn-success"><i class="fa fa-plus"></i> UPLOAD</button></a>
-                        </div>
+                       Main / File
                     </div>
                   <!-- 
                 <td class="type"><i class="fa fa-folder text-primary"></i></td>                 folder
@@ -55,30 +52,27 @@
                 -->
                     
 
-                    <div class="drive-wrapper drive-list-view">
-                        <div class="table-responsive drive-items-table-wrapper">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th class="type"></th>
-                                        <th class="name truncate">Name</th>
-                                        <th class="date">Status</th>
-                                        <th class="size">Owner</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="type"> <a href="../"><i i class="fa fa-angle-left text-warning"></i></a> </th>
-                                        <th class="name truncate"> <a href="../"> /...   </a></th>
-                                        <th class="date"></th>
-                                        <th class="size"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    
-                                   
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+               
+                    <center>  
+                    <h1 style="color:green">File Manager</h1>  
+                    <h3> Please confirm your access. </h3>  
+                      
+                    <form onsubmit ="return verifyPassword()">  
+                    <!-- Enter Password -->  
+                    <td> Enter Password </td>  
+                    <input type = "password" id = "pswd" value = "">   <input type = "submit" value = "Submit">    <button type = "reset" value = "Reset" >Reset</button>  
+                    <br><br> 
+                    <span id = "message" style="color:red"> </span>  
+                    
+                    <!-- Click to verify valid password -->  
+                    
+                      
+                    <!-- Click to reset fields -->  
+                  
+                    </form> 
+                    <span id = "show" > </span> <br><br>  
+                    </center>  
+                    
                 </div>
             </div>
         </section>
@@ -91,5 +85,40 @@ $(function(){
     $("[data-toggle='tooltip']").tooltip();
 })
 </script>
+<script>  
+    function verifyPassword() {  
+      var pw = document.getElementById("pswd").value;  
+      //check empty password field  
+      if(pw == "") {  
+         document.getElementById("message").innerHTML = "**Fill the password please!";  
+         return false;  
+      }  
+       
+     //minimum password length validation  
+      if(pw.length < 8) {  
+         document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+         return false;  
+      }  
+      
+    //maximum length of password validation  
+      if(pw.length > 15) {  
+         document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+         return false;  
+      } 
+      if(pw == "12345678") {  
+         document.getElementById("show").innerHTML = "
+         
+                         
+                        
+         ";  
+         return false;  
+      }  
+      
+      
+      else {  
+         alert("Password is correct");  
+      }  
+    }  
+    </script>  
 </body>
 </html>
