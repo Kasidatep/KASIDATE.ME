@@ -665,3 +665,7 @@ form #reset{
     height: 180%;
     border-radius: 8px;
 }
+iframe{
+    height: 100%;
+    border-radius: 8px;
+}
