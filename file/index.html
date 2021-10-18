@@ -31,16 +31,10 @@
                                 </li>
                                 <li class="activity" Assignment at KMUTT</li>
                             </ul>
-                        </div>
-                        <nav class="side-menu">
-                            <ul class="nav">
-                                <li><a href="http://kasidate.me/profile"><span class="fa fa-user"></span> My Profile</a>
-                                </li>
-                                <li><a href="#"><span class="fa fa-folder"></span> My Drive</a></li>
+                    </nav>
+                </div>
 
-                            </ul>
-                        </nav>
-                    </div>
+                
 
                     <div class="content-panel">
 
@@ -55,30 +49,29 @@
                 <td class="type"><i class="fa fa-file-word-o text-info"></i></td>               word
                 -->
 
-
-                        <div class="file">
-
-                            <h1 class="fileheader">File Manager</h1>
-                            <h3 class="filedescription"> Please confirm your access. </h3>
-
-                            <form onsubmit="return verifyPassword()">
-                                <!-- Enter Password -->
-                                <label for="file"> File Request </label>
-                                <input type="text" id="file" value="bankdsl2021" placeholder="Enter File name" required>
-                                <br>
-                                <label for="pswd"> Password </label>
-                                <input type="password" id="pswd" value="@Kasidate19" placeholder="Enter password" required>
-                                <br> <input  type="submit" value="Submit" id="submit"> <button type="reset" 
-                                    value="Reset" id="reset">Reset</button><br>
-                                <br> <span id="message" style="color:red"> </span>
-
-
-
-                            </form>
+                    <div class="drive-wrapper drive-list-view">
+                        <div class="table-responsive drive-items-table-wrapper">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="type"></th>
+                                        <th class="name truncate">Name</th>
+                                        <th class="date">Status</th>
+                                        <th class="size">Owner</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="type"> <a href="../"><i i class="fa fa-angle-left text-warning"></i></a> </th>
+                                        <th class="name truncate"> <a href="../"> /...   </a></th>
+                                        <th class="date"></th>
+                                        <th class="size"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                   
+                                </tbody>
+                            </table>
                         </div>
-                <div id="showcon">
-
-                </div>
                     </div>
                 </div>
             </div>
@@ -87,7 +80,11 @@
     </div>
 
 
-
+<script type="text/javascript">
+$(function(){
+    $("[data-toggle='tooltip']").tooltip();
+})
+</script>
 </body>
 
 </html>
