@@ -25,7 +25,7 @@
                                 src="/assets/images/aboutone.png" alt="">
                             <ul class="meta list list-unstyled">
                                 <li class="name">Kasidate Phlaiphueak
-                                    <label class="label label-info">PRO</label>
+                                    <label class="label label-info">BETA</label>
                                 </li>
                                 <li class="email"><a href="mailto:bankkasidate@gmail.com">bankkasidate@gmail.com</a>
                                 </li>
@@ -35,52 +35,33 @@
                         </div>
                         <nav class="side-menu">
                             <ul class="nav">
-                                <li><a href="#"><span class="fa fa-home"></span> Home Page</a></li>
-                                <li><a href="http://kasidate.me/profile"><span class="fa fa-user"></span> My Profile</a>
-                                </li>
+                                <li><a href="/index.html"><span class="fa fa-home"></span> Home Page</a></li>
+                                <li><a href="http://kasidate.me/profile"><span class="fa fa-user"></span> My Profile</a> </li>
                                 <li><a href="#"><span class="fa fa-folder"></span> My Drive</a></li>
-
-                            </ul>
+                                </ul>
                         </nav>
-
-
-
                     </div>
 
                     <div class="content-panel">
+                        <h1 class="fileheader">File Manager</h1>
+                        <form onsubmit="return verifyPassword()">
+                            <!-- Enter Password -->
+                            <label for="file"> File Request </label>
+                            <input type="text" id="file" value="" placeholder="Enter File name" required>
+                            <br>
+                            <label for="pswd"> Password </label>
+                            <input type="password" id="pswd" value="" placeholder="Enter password" required>
+                            <br> <input type="submit" value="Submit" id="submit"> <button type="reset" value="Reset" id="reset">Reset</button><br>
+                            <br> <span id="message" style="color:red"> </span>
 
-
+                        </form>
                         
-
-                            <h1 class="fileheader">File Manager</h1>
-
-
-                            <form onsubmit="return verifyPassword()">
-                                <!-- Enter Password -->
-                                <label for="file"> File Request </label>
-                                <input type="text" id="file" value="" placeholder="Enter File name" required>
-                                <br>
-                                <label for="pswd"> Password </label>
-                                <input type="password" id="pswd" value="" placeholder="Enter password" required>
-                                <br> <input type="submit" value="Submit" id="submit"> <button type="reset" value="Reset"
-                                    id="reset">Reset</button><br>
-                                <br> <span id="message" style="color:red"> </span>
-
-
-
-                            </form><div id="showcon"></div>
-                        
-                        
-
-
+                        <div id="showcon"></div>
 
                     </div>
-                </div>  
+                </div>
+                <label class="label label-info "> &copy; 2021 | KASIDATE.ME All rights reserved.</label>
             </section>
-
         </div>
     </div>
-
-
-
 </html>
