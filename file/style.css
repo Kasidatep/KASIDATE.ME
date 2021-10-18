@@ -627,6 +627,7 @@ form #file{
 .filedescription{
     font-weight: 400;
     color: rgb(82, 26, 82);
+}
 form #pswd{
     width: 200px;
     border-radius: 8px;
