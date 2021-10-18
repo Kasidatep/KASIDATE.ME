@@ -20,7 +20,7 @@ function verifyPassword() {
   } 
   if(pw == "@Kasidate19") {  
     if(file == "test"){
-      document.getElementById("message").innerHTML = "<pre> ผลการค้นหาทั้งหมดที่พบของ : " + document.getElementById("file").value  + " คุณสามารถดาวน์โหลดไฟล์ได้ด้วยการคลิกที่ชื่อไฟล์เพื่อทำการดาวน์โหลด</pre>";
+      document.getElementById("message").innerHTML = "<pre> ผลการค้นหาทั้งหมดที่พบของ : " + document.getElementById("file").value ;
       document.getElementById("showcon").innerHTML = '<iframe src="https://kasidate.me/file/display/test.html" width="100%" height="100%"></iframe>';
      return false;  
     }
@@ -37,4 +37,5 @@ function verifyPassword() {
   else {  
     document.getElementById("message").innerHTML = "<pre>**รหัสผ่านไม่ถูกต้อง</pre>";  
   }  
-}   ;
+};
+
