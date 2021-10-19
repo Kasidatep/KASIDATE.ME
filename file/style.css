@@ -632,6 +632,7 @@ form #pswd{
     width: 200px;
     border-radius: 8px;
     margin-top: 10px;
+    
     }
 label {
     width: 100px;
@@ -645,12 +646,15 @@ form #submit {
     width: 80px;
     margin-left: 160px;
     margin-top: 10px;
+    background-color: rgb(114, 192, 42);
+
 }
 form #reset{
     border-radius: 8px;
     align-items: center;
     width: 60px;
     margin-top: 10px;
+    background-color: rgb(236, 186, 221);
 }
 #message{
     font-weight: 800;
@@ -693,3 +697,4 @@ iframe{
   .closebtn:hover {
     color: rgb(253, 233, 233);
   }
+  
