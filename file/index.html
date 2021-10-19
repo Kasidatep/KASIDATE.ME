@@ -17,6 +17,11 @@
 <body>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> The web page is under development. Some functions may run slowly or malfunction.
+      </div>
+
     <div class="container"> <p id="timetoday"></p>
         <div class="view-account">
             <section class="module">
@@ -47,7 +52,7 @@
                     </div>
 
                     <div class="content-panel">
-                        <h1 class="fileheader">File Manager</h1>
+                        <h1 class="fileheader"><i class="fa fa-folder-open" aria-hidden="true"></i>  File Manager</h1>
                         <form onsubmit="return verifyPassword()">
                             <!-- Enter Password -->
                             <label for="file"> File Request </label>
