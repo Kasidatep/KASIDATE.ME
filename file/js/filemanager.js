@@ -21,16 +21,17 @@ if(pw.length > 15) {
 if(pw == "@Kasidate19") {  
   if(file == "test"){
     document.getElementById("message").innerHTML = "<pre> ผลการค้นหาทั้งหมดที่พบของ : " + document.getElementById("file").value  + " </pre>";
-    document.getElementById("showcon").innerHTML = '<iframe src="https://kasidate.me/file/display/test.html"></iframe>';
+    document.getElementById("showcon").innerHTML = '<iframe src="/file/display/test.html"></iframe>';
    return false;  
   }
   if(file == "bankdsl2021"){
     document.getElementById("message").innerHTML = "<pre> ผลการค้นหาทั้งหมดที่พบของ : " + document.getElementById("file").value  + " </pre>";
     document.getElementById("showcon").innerHTML = '<iframe src="https://kasidate.me/file/display/bankdsl2021.html"></iframe>';
    return false;  
+  
   }
   else{
-      document.getElementById("message").innerHTML = "<pre>**ไม่พบไฟล์ที่ร้องขอ</pre>";  
+      document.getElementById("message").innerHTML = "<pre>**ไม่พบไฟล์ที่ร้องขอ นี่คือไฟล์ที่เกี่ยวข้องทั้งหมดที่เราพบ</pre>";  
   }
 }  
 
