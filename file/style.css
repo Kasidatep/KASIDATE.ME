@@ -678,3 +678,7 @@ pre{
     font: 1em sans-serif;
     
 }
+.mod{
+    text-align: right;
+    margin-right: 25px;
+}

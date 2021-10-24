@@ -26,7 +26,7 @@ if(pw == "@Kasidate19") {
   }
   if(file == "bankdsl2021"){
     document.getElementById("message").innerHTML = "<pre> ผลการค้นหาทั้งหมดที่พบของ : " + document.getElementById("file").value  + " </pre>";
-    document.getElementById("showcon").innerHTML = '<iframe src="https://kasidate.me/file/display/bankdsl2021.html"></iframe>';
+    document.getElementById("showcon").innerHTML = '<iframe src="/file/display/bankdsl2021.html"></iframe>';
    return false;  
   
   }

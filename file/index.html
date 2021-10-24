@@ -2,9 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-
     <title>File Manager</title>
+    <meta charset="utf-8">
     <meta name="author" content="kasidatep">
     <meta property="og:title" content="File Manager | Kasidate.me">
     <meta property="og:description" content=" File Management System | version 1.2.1 ">
@@ -38,6 +37,8 @@
     <script src="/file/js/filemanager.js"></script>
     <script src="/file/js/addfile.js"></script>
     <script src="/file/js/timenow.js"></script>
+    <script src="/file/js/showversion.js"></script>
+    <script src="/file/js/title.js"></script>
 </head>
 
 <body onload="get()">
@@ -53,7 +54,7 @@
                                 src="/assets/images/aboutone.png" alt="">
                             <ul class="meta list list-unstyled">
                                 <li class="name">Kasidate Phlaiphueak
-                                    <label class="label label-info">BETA</label>
+                                    <label class="label label-info" onmouseover="version()"  id="version">BETA </label>
                                 </li>
                                 <li class="email"><a href="mailto:bankkasidate@gmail.com">bankkasidate@gmail.com</a>
                                 </li>
@@ -67,6 +68,8 @@
                                 <li><a href="http://kasidate.me/profile"><span class="fa fa-user"></span> My Profile</a>
                                 </li>
                                 <li><a href="#"><span class="fa fa-folder"></span> My Drive</a></li>
+                                <li>
+                               </li>
                             </ul>
                         </nav>
                     </div>
@@ -88,8 +91,11 @@
                         <div id="showcon"></div>
 
                     </div>
-                </div>
-                <label class="label label-info "> &copy; 2021 | KASIDATE.ME All rights reserved.</label>
+             
+                <p class=" mod">
+                <script> document.write("คุณเคยเยี่ยมชมเราเมื่อ : " +window.history.previous.href)</script>
+                </p>
+                <label class="label label-info "> &copy; 2021 | KASIDATE.ME All rights reserved.   &nbsp; &nbsp; &nbsp; &nbsp; </label>
             </section>
         </div>
     </div>
