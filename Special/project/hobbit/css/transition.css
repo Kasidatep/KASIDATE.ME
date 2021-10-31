@@ -1,0 +1,28 @@
+/*** CSS -- TRANSITION ****/
+
+/*** FEATURE SHOW ****/
+.show-feature{
+  transition: 1s;
+}
+.show-feature:hover{
+  transform: scale(1.05);
+}
+.show-description{
+  z-index: 3;
+}
+/*** MENU AREA ****/
+a.nav-menu-link {
+  transition: 0.25s;
+}
+a.nav-menu-link:hover{
+  transition: .8s;
+}
+}
+
+/** MUSIC  **/
+.music-mdisplay{
+  transition: 0.5s;
+}
+.music-mdisplay:hover{
+  transform: scale(1.005);
+}

@@ -21,10 +21,10 @@ function sVerify() {
       "**Password length must not exceed 15 characters";
     return false;
   }
-   else if (username == "admin" && pw == "@12345678") {
+   else if (username == "admin" && pw == "12345678") {
     document.getElementById("message").innerHTML =
     "**Successfully Log In "+ document.getElementById("username").value;
-    window.open("https://kasidate.me/special/2/list");
+    window.open("/special/2/list");
     return false;
   }
 
