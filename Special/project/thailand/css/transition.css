@@ -17,12 +17,37 @@ a.nav-menu-link {
 a.nav-menu-link:hover{
   transition: .8s;
 }
+.content:hover{
+  transform: scale(1.03);
+  transition: 1s;
+  transition-delay: 0.5s;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.137);
 }
-
-/** MUSIC  **/
-.music-mdisplay{
-  transition: 0.5s;
+.content-2:hover{
+  transform: scale(1.03);
+  transition: 1s;
+  transition-delay: 0.5s;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.137);
 }
-.music-mdisplay:hover{
-  transform: scale(1.005);
+.display-images:hover{
+  transform: scale(1.05);
+  transition: 2s;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.378);
+}
+.content-3a:hover{
+  transform: scale(1.03);
+  transition: 1s;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.137);
+}
+.content-3b:hover{
+  transform: scale(1.03);
+  transition: 1s;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.137);
+}
+.event{
+  animation: event 120s infinite;
+}
+@keyframes event {
+  from {background-position: 0%;}
+  to {background-position: 699%;}
 }
