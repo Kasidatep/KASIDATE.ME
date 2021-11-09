@@ -1,5 +1,14 @@
 /*** CSS -- TRANSITION ****/
-
+body{
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
 /*** FEATURE SHOW ****/
 .show-feature{
   transition: 1s;
@@ -44,7 +53,7 @@ a.nav-menu-link:hover{
   transition: 1s;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.137);
 }
-.event{
+.event-comimg{
   animation: event 120s infinite;
 }
 @keyframes event {

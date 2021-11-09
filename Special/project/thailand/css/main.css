@@ -39,6 +39,7 @@ a{
 
 
 /** HEADER **/
+
 .header {
   position: relative;
   color: white;
@@ -70,6 +71,7 @@ a{
 
 
 /*** MENU AREA ****/
+
 .nav {
   background-color: mediumorchid;
   height: 60px;
@@ -113,7 +115,34 @@ a.nav-link:active {
 }
 
 
+/*Local link*/
+
+.content-list{
+  width: 80%;
+  margin: 20px 0px;
+  padding: 85px 0px 5px ;
+  color: rgb(226, 221, 213);
+  background-color: dodgerblue;
+  border-radius: 100px;
+  text-align: center;
+  position: fixed ;
+  top: -39px;
+  z-index: 19;
+  box-shadow: 0.1em 0.1em 5em rgba(16, 2, 2, 0.611);
+}
+a.local-link{
+  color: aliceblue;
+  text-decoration: none;
+}
+a.local-link:hover{
+  color: aliceblue;
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+
 /*** FOOTER AREA ****/
+
 footer {
   background-color: darkslategray;
   color: darkturquoise;
@@ -192,28 +221,6 @@ h2.intro-text{
  display: inline;
  line-height: 2px;
  }
-.content-list{
-  width: 80%;
-  margin: 20px -40px;
-  padding: 100px 20px 20px ;
-  color: rgb(226, 221, 213);
-  background-color: dodgerblue;
-  border-radius: 100px;
-  text-align: center;
-  position: fixed ;
-  top: -39px;
-  z-index: 19;
-  box-shadow: 0.1em 0.1em 5em rgba(16, 2, 2, 0.611);
-}
-a.local-link{
-  color: aliceblue;
-  text-decoration: none;
-}
-a.local-link:hover{
-  color: aliceblue;
-  text-decoration: none;
-  padding-top: 20px;
-}
 .content{
     display: grid;
     grid-template-areas:
@@ -232,7 +239,7 @@ a.local-link:hover{
   grid-gap: 20px;
   padding: 20px;
   background-color: rgba(95, 158, 160, 0.385);
-  margin: 50px -40px 20px 0px;
+  margin: 50px 60px 20px 0px;
   padding: 20px -40px 10px 40px;
   border-radius: 30px;
 }
@@ -273,8 +280,15 @@ h2.intro-text{
   grid-area: con-img;
   display: inline;
 }
-.display-images{
+.display-images-left{
   margin: -50px 0px 0px -70px;
+  border-radius: 10%;
+  width: 400px;
+  height: 400px;
+  display: inline;
+}
+.display-images-right{
+  margin: -50px -70px 0px 0px;
   border-radius: 10%;
   width: 400px;
   height: 400px;
@@ -315,7 +329,6 @@ p.content-description{
     "sf1 sf1 sf2 sf2 "
     "sf3 sf3 sf4 sf4 "
     "sf5 sf5 sf6 sf6";
-
   grid-gap: 30px;
   padding: 10px;
 }*/
@@ -354,8 +367,10 @@ p.content-description{
   text-shadow: 0.1em 0.1em 0.1em  rgba(0, 0, 0, 0.433);
 }
 
-/** Event */
-.event{
+
+/** Event Upcoming */
+
+.event-comimg{
   background: url(../images/event/background.png);
   border-radius: 40px;
   margin: 50px;
@@ -367,36 +382,35 @@ p.content-description{
     grid-gap: 30px;
     padding: 10px;
   }
-
-.event-content{
+.event-comimg-content{
   grid-area: ec;
 }
-h2.event-title{
+h2.event-comimg-title{
   position: relative;
   padding: 0px 20px;
   font-size: 2em;
   margin-top: -10px;
 }
-h2.event-name{
+h2.event-comimg-name{
   position: relative;
   margin: -70px -30px;
   padding: 0px 70px;
   font-size: 4em;
   
 }
-h5.event-date{
+h5.event-comimg-date{
   position: relative;
   margin: 50px -30px;
   padding: 0px 70px;
   font-size: 1.1em;
   color: rgb(136, 207, 240);
 }
-.event-images{
+.event-comimg-images{
   position: relative;
   grid-area: em;
   width: auto;
 }
-.event-more{
+.event-comimg-more{
   position: relative;
   width: 60px;
   transform: rotate(90deg);
@@ -406,4 +420,63 @@ h5.event-date{
   padding: 10px;
   left: -50px;
   box-shadow: 0.2em 0.2em 0.7em rgba(0, 0, 0, 0.289);
+}
+
+
+/*EVENT PAGE*/
+
+.event{
+  display: grid;
+  grid-template-areas:
+    "e-content e-content e-content e-img e-img e-img";
+  grid-gap: 30px;
+  padding: 10px;
+  background-color: rgba(95, 158, 160, 0.282);
+  border-radius: 100px 40px;
+  padding: 10px;
+  margin: 40px 10px;
+}
+.event-content{
+  grid-area: e-content;
+}
+.event-img{
+  grid-area: e-img;
+  width: 100%;
+  border-radius: 0px 25px 80px 0px;
+  padding: auto;
+}
+h2.event-name{
+  color: aliceblue;
+  margin-top: -10px;
+  margin-left: 30px;
+  display: inline;
+}
+h6.event-date{
+  color: rgb(110, 228, 149);
+  margin-top: -10px;
+  margin-left: 20px;
+  display: inline;
+}
+p.event-description{
+  width: 100%;
+  margin-left: 20px;
+  margin-top: -5px;
+  display: block;
+}
+
+
+/* scroll bar */
+
+.scroll {
+  width: 100%;
+  height: 15px;
+  bottom: 20;
+  position:  fixed;
+  z-index: 26;
+}
+.scroll-bar {
+  height: 18px;
+  background: #b2c8da;
+  width: 0%;
+  z-index: 26;
 }
