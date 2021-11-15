@@ -26,13 +26,7 @@ a.nav-menu-link {
 a.nav-menu-link:hover{
   transition: .8s;
 }
-.content:hover{
-  transform: scale(1.03);
-  transition: 1s;
-  transition-delay: 0.5s;
-  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.137);
-}
-.content-2:hover{
+.codntent:hover{
   transform: scale(1.03);
   transition: 1s;
   transition-delay: 0.5s;

@@ -221,6 +221,21 @@ h2.intro-text{
  display: inline;
  line-height: 2px;
  }
+ .culture{
+  background-color: rgba(95, 158, 160, 0.385);
+  margin-top: 30px;
+  padding: 10px 40px;
+  border-radius: 30px;
+}
+h2.culture-text{
+ margin: -20px 10px; 
+}
+.culture-text{
+ padding: 0px 10px 5px;
+ width: 65%;
+ display: inline;
+ line-height: 2px;
+ }
 .content{
     display: grid;
     grid-template-areas:
@@ -239,7 +254,7 @@ h2.intro-text{
   grid-gap: 20px;
   padding: 20px;
   background-color: rgba(95, 158, 160, 0.385);
-  margin: 50px 60px 20px 0px;
+  margin: 50px 0px 20px 0px;
   padding: 20px -40px 10px 40px;
   border-radius: 30px;
 }
@@ -279,20 +294,16 @@ h2.intro-text{
 .content-images{
   grid-area: con-img;
   display: inline;
+
 }
-.display-images-left{
-  margin: -50px 0px 0px -70px;
-  border-radius: 10%;
-  width: 400px;
-  height: 400px;
-  display: inline;
+.img-right{
+  border-radius: 20px;
+  width: 600px;
 }
-.display-images-right{
-  margin: -50px -70px 0px 0px;
-  border-radius: 10%;
+.img-left{ 
+  margin: -50px 20px 0px -70px;
+  border-radius: 20px;
   width: 400px;
-  height: 400px;
-  display: inline;
 }
 .display-images-2{
   margin: -70px 20% 10px -0px;
