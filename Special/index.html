@@ -189,6 +189,8 @@
 								placeholder="Enter Username" required>
 							<input type="password" id="pswd" value="" class="btn btn-primary2 mr-2"
 								placeholder="Enter password" required>
+							&nbsp; <input type="radio" name="cb" id="cb1" value="usn" checked  > <label for="cb1"> Username </label> | 
+							<input type="radio" name="cb" id="cb2" value="pn"> <label for="cb2"> Pagename </label>
 							<br> <input type="submit" value="OPEN" class="btn btn-primary mr-2" id="submit">
 							<input type="reset" value="RESET" class="btn btn-primary mr-2"
 								style="background-color: #60632b;" id="submit">
@@ -210,6 +212,7 @@
 		function sPassword() {
 			var pw = document.getElementById("pswd").value;
 			var us = document.getElementById("user").value;
+			var cb = document.getElementById("cb").value;
 			//check empty password field  
 			if (pw == "") {
 				document.getElementById("message").innerHTML = "<pre>**Fill the password please!</pre>";
@@ -230,10 +233,12 @@
 			if ( us =="siraphat" && pw == "@brtd2021") {
 				window.open("./siraphat.html");
 			}
-			if ( us =="bank" && pw == "@kasidate19") {
+			else if ( us =="bank" && pw == "@kasidate19") {
 				window.open("./siraphat.html");
 			}
-
+			else if ( us =="thproject" && pw == "@kasidate19") {
+				window.open("./project/thailand");
+			}
 			else {
 				document.getElementById("message").innerHTML = "<pre>**รหัสผ่านไม่ถูกต้อง</pre>";
 				return false;
