@@ -324,7 +324,12 @@ p.content-description{
   width: 90%;
   text-align: justify;
 }
-
+.display-images-right{
+  width: 105%;
+  border-radius: 20px;
+  margin-top: -50px;
+  margin-left: -5%;
+}
 /*FEATURE SHOW ON MAIN PAGE **/
 .feature {
   display: grid;
