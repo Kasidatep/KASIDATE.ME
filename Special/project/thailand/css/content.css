@@ -1,0 +1,252 @@
+/*** CONTENT AREA ****/
+
+/*** INTO***/
+.intro {
+    background-color: rgba(95, 158, 160, 0.385);
+    padding: 10px 40px;
+    border-radius: 30px;
+  }
+  h2.intro-text {
+    margin: -20px 10px;
+  }
+  .intro-text {
+    padding: 0px 10px 5px;
+    width: 65%;
+    display: inline;
+    line-height: 2px;
+  }
+  h2.intro-text {
+    margin: -20px 10px;
+  }
+  .intro-text {
+    padding: 0px 10px 5px;
+    width: 65%;
+    display: inline;
+    line-height: 2px;
+  }
+
+  /*** Content***/
+  .content {
+    display: grid;
+    grid-template-areas: "con-bla con-img con-img con-mes con-mes con-mes ";
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgba(95, 158, 160, 0.385);
+    margin: 50px 0px 20px 40px;
+    padding: 20px 40px 10px -40px;
+    border-radius: 30px;
+  }
+  .content-2 {
+    display: grid;
+    grid-template-areas: "con-mes con-mes con-mes con-img  con-img  con-img";
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgba(95, 158, 160, 0.385);
+    margin: 50px 0px 20px 0px;
+    padding: 20px -40px 10px 40px;
+    border-radius: 30px;
+  }
+  .content-3 {
+    display: grid;
+    grid-template-areas: "cona cona cona conb conb conb";
+    grid-gap: 60px;
+    padding: 20px;
+    margin: 50px 0px 20px 0px;
+  }
+  .content-3a {
+    grid-area: cona;
+    background-color: rgba(95, 158, 160, 0.385);
+    border-radius: 30px;
+    padding: 20px;
+  }
+  .content-3b {
+    grid-area: conb;
+    background-color: rgba(95, 158, 160, 0.385);
+    border-radius: 30px;
+    padding: 20px;
+  }
+  .content-4 {
+    display: grid;
+    grid-template-areas: "con-bla con-img con-img con-mes con-mes con-mes ";
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgba(95, 158, 160, 0.385);
+    margin: 50px 0px 20px 40px;
+    padding: 20px 40px 10px -40px;
+    border-radius: 30px;
+  }
+  .content-message {
+    grid-area: con-mes;
+  }
+  .content-images {
+    grid-area: con-img;
+    display: inline;
+  }
+  .content-name {
+    display: inline;
+    text-indent: 100px;
+    font-weight: 800;
+    font-size: 2em;
+    line-height: 30px;
+  }
+  p.content-description {
+    display: block;
+    width: 90%;
+    text-align: justify;
+  }
+  .display-images-right {
+    width: 105%;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: -5%;
+  }
+  .display-images-2 {
+    margin: -70px 20% 10px -0px;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 400px;
+    display: inline;
+  }
+  .img-right {
+    border-radius: 20px;
+    width: 600px;
+  }
+  .img-left {
+    margin: -50px 20px 0px -70px;
+    border-radius: 20px;
+    width: 400px;
+  }
+  
+  /*FEATURE SHOW ON MAIN PAGE **/
+  .feature {
+    display: grid;
+    grid-template-areas:
+      "sf1 sf1 sf2 sf2 sf3 sf3"
+      "sf4 sf4 sf5 sf5 sf6 sf6";
+    grid-gap: 30px;
+    padding: 10px;
+  }
+  .feature1 {
+    grid-area: sf1;
+  }
+  .feature2 {
+    grid-area: sf2;
+  }
+  .feature3 {
+    grid-area: sf3;
+  }
+  .feature4 {
+    grid-area: sf4;
+  }
+  .feature5 {
+    grid-area: sf5;
+  }
+  .feature6 {
+    grid-area: sf6;
+  }
+  .show-feature {
+    align-content: center;
+    width: 100%;
+    border-radius: 0px 30px 0px 30px;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.233);
+  }
+  .feature-description {
+    width: 19%;
+    z-index: 2;
+    position: absolute;
+    padding: 15px;
+    font-size: 1.5em;
+    font-size: 1.5em;
+    color: rgb(248, 242, 242);
+    text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.433);
+  }
+  
+  /** Event Upcoming */
+  .event-comimg {
+    background: url(../images/event/background.png);
+    border-radius: 40px;
+    margin: 50px;
+    height: 200px;
+    box-shadow: 0.2em 0.2em 0.7em rgba(0, 0, 0, 0.289);
+    display: grid;
+    grid-template-areas: "ec ec ec ec em em";
+    grid-gap: 30px;
+    padding: 10px;
+  }
+  .event-comimg-content {
+    grid-area: ec;
+  }
+  h2.event-comimg-title {
+    position: relative;
+    padding: 0px 20px;
+    font-size: 2em;
+    margin-top: -10px;
+  }
+  h2.event-comimg-name {
+    position: relative;
+    margin: -70px -30px;
+    padding: 0px 70px;
+    font-size: 4em;
+  }
+  h5.event-comimg-date {
+    position: relative;
+    margin: 50px -30px;
+    padding: 0px 70px;
+    font-size: 1.1em;
+    color: rgb(136, 207, 240);
+  }
+  .event-comimg-images {
+    position: relative;
+    grid-area: em;
+    width: auto;
+  }
+  .event-comimg-more {
+    position: relative;
+    width: 60px;
+    transform: rotate(90deg);
+    text-align: center;
+    background-color: rgb(153, 152, 224);
+    border-radius: 20px;
+    padding: 10px;
+    left: -50px;
+    box-shadow: 0.2em 0.2em 0.7em rgba(0, 0, 0, 0.289);
+  }
+  
+  /*EVENT PAGE*/
+  .event {
+    display: grid;
+    grid-template-areas: "e-content e-content e-content e-img e-img e-img";
+    grid-gap: 30px;
+    padding: 10px;
+    background-color: rgba(95, 158, 160, 0.282);
+    border-radius: 100px 40px;
+    padding: 10px;
+    margin: 40px 10px;
+  }
+  .event-content {
+    grid-area: e-content;
+  }
+  .event-img {
+    grid-area: e-img;
+    width: 100%;
+    border-radius: 0px 25px 80px 0px;
+    padding: auto;
+  }
+  h2.event-name {
+    color: aliceblue;
+    margin-top: -10px;
+    margin-left: 30px;
+    display: inline;
+  }
+  h6.event-date {
+    color: rgb(110, 228, 149);
+    margin-top: -10px;
+    margin-left: 20px;
+    display: inline;
+  }
+  p.event-description {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: -5px;
+    display: block;
+  }

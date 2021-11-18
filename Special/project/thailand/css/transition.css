@@ -1,56 +1,72 @@
 /*** CSS -- TRANSITION ****/
-body{
+
+body {
   overflow-y: scroll;
 }
 body::-webkit-scrollbar {
   display: none;
 }
 body {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+
 /*** FEATURE SHOW ****/
-.show-feature{
+.show-feature {
   transition: 1s;
 }
-.show-feature:hover{
+.show-feature:hover {
   transform: scale(1.05);
 }
-.show-description{
+.show-description {
   z-index: 3;
 }
+
 /*** MENU AREA ****/
 a.nav-menu-link {
   transition: 0.25s;
 }
-a.nav-menu-link:hover{
-  transition: .8s;
+a.nav-menu-link:hover {
+  transition: 0.8s;
 }
-.codntent:hover{
+
+/*** CONTENT TRANSITION ****/
+.content:hover {
   transform: scale(1.03);
   transition: 1s;
   transition-delay: 0.5s;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.137);
 }
-.display-images:hover{
+.display-images:hover {
   transform: scale(1.05);
   transition: 2s;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.378);
 }
-.content-3a:hover{
+.display-images-right:hover {
+  transform: scaleY(1.1);
+  transform: translateY(-40px);
+  transition: 2s;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.378);
+}
+.content-3a:hover {
   transform: scale(1.03);
   transition: 1s;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.137);
 }
-.content-3b:hover{
+.content-3b:hover {
   transform: scale(1.03);
   transition: 1s;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.137);
 }
-.event-comimg{
+.event-comimg {
   animation: event 120s infinite;
 }
 @keyframes event {
-  from {background-position: 0%;}
-  to {background-position: 699%;}
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 699%;
+  }
 }
