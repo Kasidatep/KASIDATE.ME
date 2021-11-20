@@ -50,7 +50,6 @@ body {padding-right: 0px !important;}
 }
 .modal-open {overflow-y: scroll;}
 
-
 .modal-backdrop.show {
     opacity: 0;
 }
