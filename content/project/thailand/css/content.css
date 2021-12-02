@@ -200,16 +200,17 @@
     grid-area: em;
     width: auto;
   }
-  .event-comimg-more {
+  a.event-comimg-more {
     position: relative;
     width: 60px;
-    transform: rotate(90deg);
     text-align: center;
     background-color: rgb(153, 152, 224);
     border-radius: 20px;
     padding: 10px;
     left: -50px;
     box-shadow: 0.2em 0.2em 0.7em rgba(0, 0, 0, 0.289);
+    transform: rotate(-90deg);
+  
   }
   
   /*EVENT PAGE*/
@@ -239,14 +240,15 @@
     display: inline;
   }
   h6.event-date {
-    color: rgb(110, 228, 149);
+    color: rgb(148, 240, 179);
     margin-top: -10px;
-    margin-left: 20px;
+    margin-left: 10px;
     display: inline;
   }
   p.event-description {
     width: 100%;
     margin-left: 20px;
+    margin-right: 20px;
     margin-top: -5px;
-    display: block;
+    
   }

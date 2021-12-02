@@ -1694,3 +1694,15 @@ preloader
   left: 30px;
   width: 30%;
 }
+.weatherwidget-io{
+  position: fixed;
+  bottom: 0px;
+  z-index: 200;
+  pointer-events: none;
+}
+.airv-1{
+  position: fixed;
+  z-index: 200;
+  right: 20px;
+  top: 30px;
+}
