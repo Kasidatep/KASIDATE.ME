@@ -1697,7 +1697,7 @@ preloader
 .weatherwidget-io{
   position: fixed;
   bottom: 0px;
-  z-index: 200;
+  z-index: 2;
   pointer-events: none;
 }
 .airv-1{
@@ -1705,4 +1705,8 @@ preloader
   z-index: 200;
   right: 20px;
   top: 30px;
+}
+.livecoinwatch-widget-5{
+  z-index: 5;
+  pointer-events: none;
 }
