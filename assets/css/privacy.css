@@ -15,13 +15,14 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10px;
+    margin-top: 0px;
 }
 .img-head{
     width: 100%;
+   
 }
 .content{
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 .textheader{
@@ -32,11 +33,20 @@ body {
 .lebletime{
     font-size: 1em;
     margin: 5px;
-    padding: 4px;
+    padding: 2px 5px;
     background-color: rgba(0, 187, 255, 0.563);
     border-radius: 10px;
     text-align: center;
     width: 175px;
+    display: inline;
+}
+.lebletime-2{
+  font-size: 1em;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 255px;
+  display: inline;
 }
 .context{
     text-indent: 50px;
@@ -45,6 +55,8 @@ body {
     font-size: 1.15em;
     font-weight: 500;
     margin-bottom: 25px;
+    margin-top: 15px;
+    list-style-type: square;
 }
 .contextlist{
     text-indent: 10px;
@@ -52,7 +64,7 @@ body {
     margin: auto;
     font-size: 1.15em;
     font-weight: 500;
-    margin-top: 15px;
+    
 }
 .conheader{
     font-size: 24px;
@@ -61,7 +73,8 @@ body {
 }
 .listcom{
     text-indent: 100px;
-    text-decoration: none;
+    margin-top: 15px;
+    list-style-type: square;
 }
 footer {
     background-image: linear-gradient(0deg, #000000ab -10%, #ffffff 100%);
@@ -130,13 +143,14 @@ footer {
   .scroll {
     width: 100%;
     background-color: rgba(60, 13, 13, 0.645);
-    height: 15px;
+    box-shadow: 0em -0.1em 0.4em black;
+    height: 5px;
     bottom: 0%;
     position: fixed;
     z-index: 26;
   }
   .scroll-bar {
-    height: 15px;
+    height: 5px;
     background: #1bf363;
     width: 100%;
     z-index: 26;

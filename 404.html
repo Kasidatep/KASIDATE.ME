@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Page Not Found</title>
+	<title>404 Page Not Found</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
@@ -15,11 +15,11 @@
 	<link type="text/css" rel="stylesheet" href="/assets/css/style404.css" />
 
 	<link rel="icon" type="image/png" href="/assets/favicon/ms-icon-310x310.png" />
-
+	<link rel="stylesheet" href="/assets/bootstrap5/css/pageconstuctor.css">
 </head>
 
 <body>
-
+	
 	<div id="notfound">
 		<div class="notfound">
 			<div class="notfound-404"></div>
@@ -27,10 +27,14 @@
 			<h2>Oops! Page Not Be Found</h2>
 			<p>Sorry but the page you are looking for does not exist, have been removed. name changed or is temporarily
 				unavailable</p>
-			<a onclick="goBack()">Previous page </a> &nbsp;&nbsp; | &nbsp;&nbsp;
+			<a onclick="goBack()">Previous Page </a> &nbsp;&nbsp; | &nbsp;&nbsp;
 
-			<a href="https://kasidate.me">Back to homepage</a>
+			<a href="/">Back to Homepage</a>
 		</div>
+	</div>
+	<div class="go404">
+		<h4>&copy; Copyright <script>var CurrentYear = new Date().getFullYear()
+			document.write(CurrentYear)</script> KASIDATE.ME | KASIDATEPLUS</h4>
 	</div>
 	<script>
 		function goBack() {

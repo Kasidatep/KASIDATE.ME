@@ -1,0 +1,22 @@
+body{
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: black;
+}
+body {
+    overflow-y: scroll;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .video{
+      margin: auto;
+  }
+  iframe{
+      margin: auto;
+      width: 100%;
+      pointer-events: none;
+  }

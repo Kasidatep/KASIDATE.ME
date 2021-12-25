@@ -1,0 +1,8 @@
+.countpopup{
+    bottom: 15px;
+    right: 15px;
+    position: absolute;
+    z-index: 5;
+    background-color: aliceblue;
+    color: rgb(93, 19, 123);
+}
