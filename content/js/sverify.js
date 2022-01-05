@@ -19,10 +19,10 @@ function sVerify() {
       "**Password length must not exceed 15 characters";
     return false;
   }
-   else if ( pw == "@brtd2021") {
+   else if ( pw == "@pswd") {
     document.getElementById("message").innerHTML =
     "**Successfully Log In "+ document.getElementById("username").value;
-    window.open("./siraphat.html");
+    window.open("./lock.html");
   }
 
   else {
