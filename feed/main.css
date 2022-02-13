@@ -24,12 +24,12 @@ ul {
 
 ul a{
     text-decoration: none;
-    color: #222225b4;
+    color: #000000b4;
     display: inline;
 }
 
 ul a:hover{
-    color:#c7c7f5;
+    color:#040461;
 }
 
 li{
