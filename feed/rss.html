@@ -11,15 +11,29 @@
     <title>RSS News Feed</title>
 </head>
 <body>
+
+
     <div id="canvas">
+        <div class="flex-container">
+            <div style="flex-grow: 1" class="titlenewsbar"> READ : </div>
+            <div style="flex-grow: 8">
+                <marquee>
+                    <div id="feed-textarea">
+                     <ul>  </ul>
+                    </div>
+                </marquee> 
+            </div>
+          </div>
+          <div style="flex-grow: 1" class="datetoday">
+
+
         <div id="heading">   
-            <h3><img src="https://kasidate.me/assets/images/bank.png" class="titleimg"> RSS Feed for <span id="selectionTitle">Blog.kasidate.me</span></h3>
+          
             <h4 id="date"></h4>
         </div>
-
-        <div id="feed-textarea">
-            <ul></ul>
-        </div>
+       <marquee><div id="feed-textarea">
+        <ul></ul>
+        </div></marquee> 
     </div>
     <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
     <script src="app.js"></script>
