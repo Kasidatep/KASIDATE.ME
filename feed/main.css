@@ -1,5 +1,5 @@
 html{
-    background-color: #E42C64;
+    background-color: #501e2d;
 }
 
 body{
@@ -9,30 +9,11 @@ body{
 #canvas{
     box-sizing: border-box;
     width: 100%;
-    background-color: lightblue;
+    height: 2.3em;
+    background-color:rgb(97, 49, 230);
     margin: 0px auto;
     font-family: 'Kanit', sans-serif;
     
-}
-
-
-
-#heading{
-    text-align: center;
-}
-
-h3{
-    padding: 15px;
-    display: inline;
-
-}
-
-span{
-    color: #d4d2e2;
-}
-
-#date{
-    color:#E42C64;
 }
 
 ul {
@@ -43,7 +24,7 @@ ul {
 
 ul a{
     text-decoration: none;
-    color: #f4f4f8;
+    color: #222225b4;
     display: inline;
 }
 
@@ -58,22 +39,27 @@ li{
 .flex-container {
     display: flex;
     align-items: stretch;
-    background-color: #e9baba;
     height: 2.1em;
   }
   
   .flex-container > div {
-    background-color: rgb(36, 43, 49);
-    color: rgb(231, 221, 221);
+    background-color: rgb(246, 248, 250);
+    color: rgb(248, 248, 248);
     text-align: center;
-  
   }
   .flex-container .titlenewsbar{
-    width: 20%;
     font-weight: 700;
     font-size: 1.4em;
-    background-color: #70585f;
-    color: rgb(218, 218, 240);
+    background-color:rgb(97, 49, 230);
+    color: rgb(243, 243, 247);
+    display: inline;
+    height: 1.5em;
+    padding: 0px 5px;
+  }
+.display-date{
+  color: rgb(53, 32, 32);
+  font-weight: 900;
+  font-size: 1.4em;
   }
   .newsdisplay{
     font-weight:900 ;
@@ -84,14 +70,12 @@ li{
     font-weight: 900 ;
     display: inline;
     font-size: 1.4em;
-    background-color: rgb(240, 12, 12);
+    background-color:rgb(97, 49, 230);
     padding-top: 10px;
     padding-bottom: 15px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 10%;
   }
-  .reemarquee{
-    direction: left;
-  }
+ 
   

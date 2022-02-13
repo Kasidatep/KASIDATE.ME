@@ -15,26 +15,22 @@
 
     <div id="canvas">
         <div class="flex-container">
-            <div style="flex-grow: 1" class="titlenewsbar"> READ : </div>
+            <div style="flex-grow: 1" class="titlenewsbar">
+                <marquee  behavior="slide" direction="up"> READ</marquee>
+               
+                </div> 
             <div style="flex-grow: 8">
                 <marquee>
                     <div id="feed-textarea">
-                     <ul>  </ul>
+                     
+                        <ul> 
+                          <li id="display-date" class="display-date"></li>
+                        </ul>
                     </div>
                 </marquee> 
             </div>
           </div>
-          <div style="flex-grow: 1" class="datetoday">
-
-
-        <div id="heading">   
-          
-            <h4 id="date"></h4>
-        </div>
-       <marquee><div id="feed-textarea">
-        <ul></ul>
-        </div></marquee> 
-    </div>
+           </div>
     <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
     <script src="app.js"></script>
 </body>
