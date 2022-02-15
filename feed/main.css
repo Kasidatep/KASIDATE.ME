@@ -28,8 +28,8 @@ ul a{
     display: inline;
 }
 
-ul a:hover{
-    color:#040461;
+ul :hover{
+    color:#000000;
 }
 
 li{

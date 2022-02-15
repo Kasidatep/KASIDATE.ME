@@ -1,4 +1,4 @@
-let url = 'https://blog.kasidate.me/feeds/posts/default';
+let url = 'http://rssfeeds.sanook.com/rss/feeds/sanook/news.index.xml';
 const textarea = document.querySelector('#feed-textarea > ul');
 var space = '     ';
 const date = new Date();
@@ -36,8 +36,8 @@ feednami.load(url)
       //create a list element
       let li = document.createElement('li');
       //add HTML content to list items
-      li.innerHTML = `<div class="categories">${entry.categories} </div>
-      <a href="${entry.link}" class="newsdisplay"> &nbsp; ${entry.title} ${entry.image}</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      li.innerHTML = `<div class="categories">${entry.description} </div>
+      <a href="${entry.link}" class="newsdisplay"> &nbsp; ${entry.title} </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
       `;
       //append HTML content to list 
       textarea.appendChild(li);
