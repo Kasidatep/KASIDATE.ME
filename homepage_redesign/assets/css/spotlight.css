@@ -1,0 +1,125 @@
+body{
+    width: 100.4%;
+    margin-left: -6px;
+}
+.spotlight{
+    background: #010101;
+    background: -webkit-linear-gradient(bottom right, #010101, #646C6A);
+    background: -moz-linear-gradient(bottom right, #010101, #646C6A);
+    background: linear-gradient(to top left, #010101, #646C6A);;
+    margin: 0px;
+    padding: 20px;
+    height: 560px;
+}
+.spotlight-container{
+    font-family: 'Kanit', sans-serif;
+}
+.spotlight-bg{
+    z-index: 0;
+    opacity: .2;
+    height: 600px;
+    position: absolute;
+    margin: -20px;
+    width: 100.4%;
+}
+.spotlight-header{
+    color: aliceblue;
+    display: inline;
+    left: 20px;
+    position: absolute;
+}
+.sheader{
+    padding-left: 50px;
+    font-size: 19px;
+    font-weight: 800;
+}
+.shake-opacity{
+    position: absolute;
+    font-size: 100px;
+    font-weight: 900;
+    left: 90%;
+    top: 450px;
+    color: rgba(240, 255, 255, 0.329);
+    text-decoration: none;
+}
+.sbrigde{
+    padding: 20px;
+    background-color: rgb(142, 142, 231);
+    padding: 1px 2px;
+    border-radius: 5px;
+}
+.blinking{
+    position: absolute;
+    left: -20px;
+    top: -35px;
+    
+}
+.blinking {
+    -webkit-animation: 1s blink ease infinite;
+    -moz-animation: 1s blink ease infinite;
+    -ms-animation: 1s blink ease infinite;
+    -o-animation: 1s blink ease infinite;
+    animation: 1s blink ease infinite;
+    
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  .spotlight-title{
+      color: aliceblue;
+      font-size: 50px;
+      font-weight: 900;
+      padding-top: 400px;
+      padding-left: 25px;
+      position: absolute;
+  }
+  .spotlight-content{
+    color: rgb(167, 178, 184);
+    font-size: 25px;
+    font-weight: 900;
+    padding-left: 25px;
+    padding-top: 470px;
+    position: absolute;
+}
