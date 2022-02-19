@@ -1,0 +1,46 @@
+.uk-ext-text-white{
+    color: azure;
+}
+.uk-ext-margin30{
+    margin: 50px;
+    padding: 20px;
+}
+.uk-ext-textmargin30{
+    margin-left: 15px;
+    padding: 2px;
+}
+.uk-contmar{
+    margin: 10px;
+}
+.uk-ext-margin15{
+    margin-top: 25px;
+    padding: 10px;
+}
+li{
+   list-style: none;
+}
+@media only screen and (min-width: 10px) {
+    /* For phone: */
+    .blog-ext-img-content {height: 5px;
+        overflow: hidden;}
+}
+@media only screen and (min-width: 150px) {
+    /* For tablets: */
+    .blog-ext-img-content {height: 150px;
+        overflow: hidden;}
+}
+@media only screen and (min-width: 870px) {
+    .blog-ext-img-content {height: 400px;
+        overflow: hidden;}
+}
+body{
+    font-family: 'Kanit' , Mitr , sans-serif !important;
+}
+.uk-feed-mixcont-border{
+    margin-top: -10px;
+    margin-left: -20px;
+    z-index: 0;
+}
+.uk-ext-z1{
+    z-index: 1;
+}

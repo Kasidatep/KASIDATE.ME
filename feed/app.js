@@ -24,7 +24,7 @@ function toThaiDateString(date) {
 let today = new Date();
 let date1 = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
-document.querySelector('#display-date').innerHTML = toThaiDateString(date);
+//document.querySelector('#display-date').innerHTML = toThaiDateString(date);
 console.log(toThaiDateString(date));
 
 feednami.load(url)
@@ -33,14 +33,31 @@ feednami.load(url)
     console.log(feed);
     for (let entry of feed.entries) {
 
+
+
+      
       //create a list element
       let li = document.createElement('li');
       //add HTML content to list items
-      li.innerHTML = `<div class="categories">${entry.categories} </div>
-      <a href="${entry.link}" class="newsdisplay"> &nbsp; ${entry.title} ${entry.image}</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-      `;
+      li.innerHTML = `
+      <div class="uk-card uk-card-default uk-card-body uk-ext-margin15 uk-contmar ">
+      
+      <span class="uk-label uk-ext-z1 uk-ext-textmargin30">${entry.categories}</span> 
+      <a href="${entry.link}" class="uk-ext-z1"> &nbsp; ${entry.title}
+       </a> 
+      
+       <div class="blog-ext-img-content uk-feed-mixcont-border uk-ext-margin15"> ${entry.description}
+       </div>
+      
+      </div>`;
       //append HTML content to list 
       textarea.appendChild(li);
     }
   });
 
+  /*
+
+  <div class="blog-ext-img-content uk-feed-mixcont-border uk-ext-margin15"> ${entry.description}
+  </div>
+
+*/
