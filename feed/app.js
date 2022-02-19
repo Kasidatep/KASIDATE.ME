@@ -2,7 +2,6 @@ let url = 'https://blog.kasidate.me/feeds/posts/default';
 const textarea = document.querySelector('#feed-textarea > ul');
 var space = '     ';
 const date = new Date();
-//document.querySelector('#date').innerHTML = date.toDateString();
 
 function toThaiDateString(date) {
   let monthNames = [
@@ -24,7 +23,6 @@ function toThaiDateString(date) {
 let today = new Date();
 let date1 = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
-//document.querySelector('#display-date').innerHTML = toThaiDateString(date);
 console.log(toThaiDateString(date));
 
 feednami.load(url)
@@ -34,30 +32,19 @@ feednami.load(url)
     for (let entry of feed.entries) {
 
 
-
-      
       //create a list element
       let li = document.createElement('li');
       //add HTML content to list items
       li.innerHTML = `
-      <div class="uk-card uk-card-default uk-card-body uk-ext-margin15 uk-contmar ">
       
-      <span class="uk-label uk-ext-z1 uk-ext-textmargin30">${entry.categories}</span> 
-      <a href="${entry.link}" class="uk-ext-z1"> &nbsp; ${entry.title}
+      <div class="uk-card uk-card-default uk-card-body uk-ext-margin15 uk-contmar uk-animation-toggle " tabindex="0" >
+      <img src="${entry.image.url}" class="uk-ext-margin10"> 
+      <span class="uk-label uk-ext-z1 uk-ext-textmargin3 uk-text-bold uk-animation-shake"><span uk-icon="tag" > </span> ${entry.categories}</span> 
+       <a href="${entry.link}" class="uk-ext-z1 uk-link-heading uk-animation-scale-up">  ${feed.meta.title} &nbsp; ${entry.title} >>>&nbsp; &nbsp; 
        </a> 
-      
-       <div class="blog-ext-img-content uk-feed-mixcont-border uk-ext-margin15"> ${entry.description}
-       </div>
-      
+         
       </div>`;
-      //append HTML content to list 
+     
       textarea.appendChild(li);
     }
   });
-
-  /*
-
-  <div class="blog-ext-img-content uk-feed-mixcont-border uk-ext-margin15"> ${entry.description}
-  </div>
-
-*/

@@ -2,19 +2,28 @@
     color: azure;
 }
 .uk-ext-margin30{
-    margin: 50px;
-    padding: 20px;
+    margin: 25px;
+    padding: 10px;
+}
+.uk-ext-margin10{
+    height: 60px;
+    padding: 0px 10px;
+    border-radius: 100%;
 }
 .uk-ext-textmargin30{
     margin-left: 15px;
     padding: 2px;
 }
+.uk-ext-textmargin3{
+    margin-left: 1px;
+    padding: 10px;
+}
 .uk-contmar{
-    margin: 10px;
+    margin: 2px;
 }
 .uk-ext-margin15{
-    margin-top: 25px;
-    padding: 10px;
+    padding: 5px;
+    margin: 0px 10px;
 }
 li{
    list-style: none;
@@ -43,4 +52,14 @@ body{
 }
 .uk-ext-z1{
     z-index: 1;
+}
+ul > li{
+    display: inline-block;
+}
+.font-newsbar{
+    font-size: 20px;
+    font-weight: 600;
+}
+.uk-ext-inlineli{
+    display: inline;
 }

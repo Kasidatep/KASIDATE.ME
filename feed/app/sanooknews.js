@@ -1,4 +1,4 @@
-let url = 'http://rssfeeds.sanook.com/rss/feeds/sanook/news.index.xml';
+let url = 'https://www.posttoday.com/rss/src/breakingnews.xml';
 const textarea = document.querySelector('#feed-textarea > ul');
 var space = '     ';
 const date = new Date();
@@ -24,7 +24,7 @@ function toThaiDateString(date) {
 let today = new Date();
 let date1 = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
-document.querySelector('#display-date').innerHTML = toThaiDateString(date);
+//document.querySelector('#display-date').innerHTML = toThaiDateString(date);
 console.log(toThaiDateString(date));
 
 feednami.load(url)
@@ -33,14 +33,28 @@ feednami.load(url)
     console.log(feed);
     for (let entry of feed.entries) {
 
+
+
+      
       //create a list element
       let li = document.createElement('li');
       //add HTML content to list items
-      li.innerHTML = `<div class="categories">${entry.description} </div>
-      <a href="${entry.link}" class="newsdisplay"> &nbsp; ${entry.title} </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      li.innerHTML = `
+      
+      
+      <a href="${entry.link}" class="font-newsbar"> ***** ${entry.description}
+       </a> 
+      
+         
       `;
       //append HTML content to list 
       textarea.appendChild(li);
     }
   });
 
+  /*
+
+  <div class="blog-ext-img-content uk-feed-mixcont-border uk-ext-margin15"> ${entry.description}
+  </div>
+
+*/
