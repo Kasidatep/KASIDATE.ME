@@ -19,17 +19,16 @@
     <meta name="twitter:site" content="@kasidatetoday" />
     <meta name="twitter:creator" content="@kasidatetoday" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <title>Kasidate.me</title>
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
     <link rel="stylesheet" href="/assets/css/event.css">
-
     <link rel="stylesheet" href="assets/css/template.css?v=1001">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="/homepage_redesign/assets/css/uikit-ext-kasidate.css">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
@@ -49,34 +48,38 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8727565594053456"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
-        
-        <script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/feed/assets/main.css">
+    <script>
         // Get all elements with class="closebtn"
         var close = document.getElementsByClassName("closebtn");
         var i;
-        
+
         // Loop through all close buttons
         for (i = 0; i < close.length; i++) {
-          // When someone clicks on a close button
-          close[i].onclick = function(){
-        
-            // Get the parent of <span class="closebtn"> (<div class="alert">)
-            var div = this.parentElement;
-        
-            // Set the opacity of div to 0 (transparent)
-            div.style.opacity = "0";
-        
-            // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
-            setTimeout(function(){ div.style.display = "none"; }, 600);
-          }
+            // When someone clicks on a close button
+            close[i].onclick = function () {
+
+                // Get the parent of <span class="closebtn"> (<div class="alert">)
+                var div = this.parentElement;
+
+                // Set the opacity of div to 0 (transparent)
+                div.style.opacity = "0";
+
+                // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+                setTimeout(function () { div.style.display = "none"; }, 600);
+            }
         }
-        </script>
-	<link rel="stylesheet" type="text/css" href="/assets/event/pure-css-snowfall-master/dist/css/snowfall.css">
+    </script>
+    <link rel="stylesheet" type="text/css" href="/assets/event/pure-css-snowfall-master/dist/css/snowfall.css">
 </head>
 
 <body>
@@ -84,33 +87,45 @@
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
         <div class="jumper">
-		<div></div>
-		<div></div>
-		<div></div>
-                 </div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
     <!-- ***** Preloader End ***** -->
-    
 
-    <!-- ****** EVENT *************-->
-   
 
-   
-    <!--no event now -->
+    <div id="canvas">
+        <div class="flex-container-bar">
+            <div style="flex-grow: 1" class="titlenewsbar">
+                <marquee behavior="slide" direction="up"> READ</marquee>
 
+            </div>
+            <div style="flex-grow: 8">
+                <marquee>
+                    <div id="feed-textarea-newsbar">
+
+                        <ul class="newsdisplay" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+                           
+                        </ul>
+                    </div>
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <div id="feed-w-warning">
+
+        <ul>
+            <li id="display-date" class="display-date"></li>
+        </ul>
+    </div>
 
     <!-- ***** Header Area Start ***** -->
-    
+
     <header class="header-area header-sticky">
         <div class="container">
-            
-            <!--
-                  <div class="krathong1" style="top: 600px; transform: translate3d(200px, -10px, 20px);transition: 5s;  background-repeat: 500px/100px repeat;"></div> 
-          <div class="krathong1" style="top: 580px; transform: translate3d(1020px, 15px, 20px);transition: 3s;  background-repeat: 500px/100px repeat;"></div> 
-          <div class="krathong1" style="top: 570px; transform: translate3d(500px, -30px, 20px);transition: 2s;  background-repeat: 500px/100px repeat;"></div> 
-     
-            -->
-          
+
+
 
             <div class="row">
                 <div class="col-12">
@@ -126,7 +141,7 @@
                         </a>
                         <!-- ***** Logo End ***** -->
 
-                       
+
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li><a href="./main" class="active">Home</a></li>
@@ -144,15 +159,12 @@
                     </nav>
                 </div>
 
-          
-
-
             </div>
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
-  
-        <!-- ***** Home Parallax End ***** -->
+
+    <!-- ***** Home Parallax End ***** -->
 
     <!-- ***** Welcome Area Start ***** -->
     <div class="welcome-area" id="welcome">
@@ -226,23 +238,23 @@
     </section>
     <!-- ***** about Small End ***** -->
 
-	
-	<!-- blog start below editing in ver vertion -->
-	
+
+    <!-- blog start below editing in ver vertion -->
 
 
-	<!-- blog end -->
-	
-	
+
+    <!-- blog end -->
+
+
     <!-- ***** about Big Item Start ***** -->
     <section class="section padding-top-70 padding-bottom-0" id="About">
         <div class="container">
-       
-		      <!-- ***** Section Title Start ***** -->
+
+            <!-- ***** Section Title Start ***** -->
             <div class="row">
-		    
-		    
-		   
+
+
+
                 <div class="col-lg-12">
                     <div class="center-heading">
                         <h2 class="section-title">ABOUT US</h2>
@@ -253,10 +265,10 @@
                         <p> What's About me </p>
                     </div>
                 </div>
-		    </div>
-		    
+            </div>
+
             <!-- ***** Section Title End ***** -->
-		     <div class="row">
+            <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
                     data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                     <img src="assets/images/aboutone.png" class="rounded img-fluid d-block mx-auto" alt="App">
@@ -273,7 +285,8 @@
                             .</p>
                         <p>I'm from Phetchaburi Province since birth. and studied at the primary level at <strong> Wat
                                 Na Phrom School</strong> (Mon-Mahawiriyakan) until the end of Primary 6 and then
-                            continued to study at <strong>Benchamatheputhit, Phetchaburi School</strong> in who classroom
+                            continued to study at <strong>Benchamatheputhit, Phetchaburi School</strong> in who
+                            classroom
                             to promote excellence in mathematics and science in junior high school and a science smart
                             classroom at the end of high school level</p>
                     </div>
@@ -318,29 +331,33 @@
     <!-- ***** Home Parallax Start ***** -->
     <section class="mini" id="Feature">
         <div class="mini-content">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-lg-3 col-lg-6">
-                        <div class="info">
-                            <h1>News Update</h1>
-                           
-                        
-                        </div>
-                    </div>
-                </div>
 
-                <!-- ***** tweet box Start ***** -->
-                
-                
-                <!-- ***** tweet box End ***** -->
-                
+
+
+            <div class="info">
+                <h1 class="uk-text-bold">ARTICLE READ</h1>
+
             </div>
         </div>
+     
     </section>
-    <a class="weatherwidget-io" href="https://forecast7.com/en/13d76100d50/bangkok/" data-label_1="BANGKOK" data-label_2="THAILAND" data-font="Verdana" data-icons="Climacons Animated" data-theme="clear" bottom="0px" >BANGKOK THAILAND</a>
-                <script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-                </script>
+    
+    <div class="uk-container">
+        <div class="uk-child-width-1-1@s" uk-grid uk-height-match="target: > div > .uk-card; row: false">
+            <div class="uk-first-column" id="feed-textarea-blog">
+                <ul class="uk-card uk-card-body uk-grid-margin uk-ext-margin30  uk-list-large"> </ul>
+
+            </div>
+        </div>
+    </div>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/13d76100d50/bangkok/" data-label_1="BANGKOK"
+        data-label_2="THAILAND" data-font="Verdana" data-icons="Climacons Animated" data-theme="clear"
+        bottom="0px">BANGKOK THAILAND</a>
+    <script>
+
+
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
 
 
 
@@ -417,7 +434,7 @@
                             <hr>
                             <p> “เราก้าวเดินไปข้างหน้า เปิดประตูบานใหม่ๆ และทำในสิ่งใหม่ๆ
                                 เพราะคนเป็นสิ่งมีชีวิตที่อยากรู้อยากเห็น
-                                และเจ้าความอยากรู้อยากเห็นนี่เองที่นำพาเราไปสู่หนทางใหม่ๆ.” </p>
+                                และเจ้าความอยากรู้อยากเห็นนี่เองที่นำพาเราไปสู่หนทางใหม่ ๆ.” </p>
                             <div class="user-image">
                                 <img src="./assets/images/Walt_Disney_2.jpg" width="100% alt="">
                             </div>
@@ -434,7 +451,12 @@
     </section>
     <!-- ***** who End ***** -->
 
-    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#ff6900" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="30" ></div>
+
+    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
+    <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#ff6900" lcw-marquee-1="coins"
+        lcw-marquee-2="movers" lcw-marquee-items="30"></div>
+
+
     <!-- ***** Blog Start ***** -->
     <section class="section" id="blog">
         <div class="container">
@@ -462,15 +484,15 @@
                         <div class="blog-content">
                             <h3>
                                 <a href="https://www.youtube.com/channel/UCqRVfaSAum_coOYlhuicRVQ">
-                                    vlog เดินเที่ยวคลองกระแชง ชี้แจงประวัติศาสตร์</a>
+                                    vlog เดินเที่ยวคลองกระแชง</a>
                             </h3>
                             <div class="text">
-                                VLOG เดินเที่ยวคลองกระแชง ชี้แจงประวัติศาสตร์
-                                เป็นโครงการที่จัดทำขึ้นเพื่อทำเสนอการท่องเที่ยวเชิงประวัติศาสตร์ ภายในชุมชนคลองกระแชง
-                                จังหวัดเพชรบุรี ซึ่งจัดทำโดยกลุ่มนักเรียนโรงเรียนเบญจมเทพอุทิศจังหวัดเพชรบุรี
-                                
+                                เป็นโครงการที่จัดทำขึ้นเพื่อนำเสนอการท่องเที่ยวเชิงประวัติศาสตร์ ภายในชุมชนคลองกระแชง
+                                จังหวัดเพชรบุรี
+
                             </div>
-                            <a href="https://www.youtube.com/channel/UCqRVfaSAum_coOYlhuicRVQ" class="main-button">Read More</a>
+                            <a href="https://www.youtube.com/channel/UCqRVfaSAum_coOYlhuicRVQ" class="main-button">Read
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -493,7 +515,7 @@
 
 
                             </div>
-                            <a href="https://kasidate.me/travelwithme" class="main-button">Read More</a>
+                            <a href="" class="main-button">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -504,104 +526,38 @@
                         </div>
                         <div class="blog-content">
                             <h3>
-                                <a href="http://Kasidate.today">Kasidate.today</a>
+                                <a href="">KasidateBLOG</a>
                             </h3>
                             <div class="text">
                                 เว็บไซต์ข่าวสาร ข้อมูล บทความจาก KasidateToday
                                 <ul>
-                                    <li> Weather </li>
-                                    <li> Newst New Update</li>
-                                    <li> Kasidate aticle </li>
+                                    <li> Weather \ </li>
+                                    <li> News Update  \</li>
+                                    <li> Kasidate article </li>
                                 </ul>
                             </div>
-                            <a href="http://Kasidate.today" class="main-button">Read More</a>
+                            <a href="https://blog.kasidate.me" class="main-button">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-post-thumb">
-                        <div class="img">
-                            <img src="assets/images/vlog8.png" width="100%" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h3>
-                                <a href="https://www.youtube.com/channel/UCqRVfaSAum_coOYlhuicRVQ">
-                                    vlog เดินเที่ยวคลองกระแชง ชี้แจงประวัติศาสตร์</a>
-                            </h3>
-                            <div class="text">
-                                VLOG เดินเที่ยวคลองกระแชง ชี้แจงประวัติศาสตร์
-                                เป็นโครงการที่จัดทำขึ้นเพื่อทำเสนอการท่องเที่ยวเชิงประวัติศาสตร์ ภายในชุมชนคลองกระแชง
-                                จังหวัดเพชรบุรี ซึ่งจัดทำโดยกลุ่มนักเรียนโรงเรียนเบญจมเทพอุทิศจังหวัดเพชรบุรี
-                                ซึ่งผลการศึกษาจะนำเสนอผ่านทาง https://kasidate.me/phetchaburitravel
-                            </div>
-                            <a href="https://kasidate.me/phetchaburitravel" class="main-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-post-thumb">
-                        <div class="img">
-                            <img src="assets/images/bank.png" width="100%" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h3>
-                                <a href="https://youtube.com/playlist?list=PLfK86KfV7Nlvj9uiYY3tKGzaLXbhaWbJu">Travel
-                                    With Me</a>
-                            </h3>
-                            <div class="text">
-                                <ul>
-                                    <li> Chang Hua Mun </li>
-                                    <li> The Filed Annimal Dream</li>
-                                    <li> Mangrove forest </li>
-                                </ul>
-
-
-                            </div>
-                            <a href="https://kasidate.me/travelwithme" class="main-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-post-thumb">
-                        <div class="img">
-                            <img src="assets/images/today.png" width="100%" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h3>
-                                <a href="http://Kasidate.today">Kasidate.today</a>
-                            </h3>
-                            <div class="text">
-                                เว็บไซต์ข่าวสาร ข้อมูล บทความจาก KasidateToday
-                                <ul>
-                                    <li> Weather </li>
-                                    <li> Newst New Update</li>
-                                    <li> Kasidate aticle </li>
-                                </ul>
-                            </div>
-                            <a href="#" class="main-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
     <!-- ***** Blog End ***** -->
     <!-- ***** ig widjet slide port start ***** -->
-<!-- LightWidget WIDGET -->
-			<div class="container">
-            <div class="row
-				     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-fd79abf4-3d17-4e3b-9de7-4b054b04bf10"></div>
-            </div> 
+    <!-- LightWidget WIDGET -->
+    <div class="container">
+        <div class="row
+				     <script src=" https://apps.elfsight.com/p/platform.js" defer>
+            </script>
+            <div class="elfsight-app-fd79abf4-3d17-4e3b-9de7-4b054b04bf10"></div>
         </div>
-     
-     <!-- ***** ig widjet slide port end ***** -->
-       
-   <!-- ***** Footer Start ***** -->
+    </div>
+
+    <!-- ***** ig widjet slide port end ***** -->
+
+    <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
             <div class="row">
@@ -619,10 +575,12 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="copyright">Copyright &copy; <script> 
-                        var CurrentYear = new Date().getFullYear()
-                        document.write(CurrentYear)
-                    </script> Kasidate.me - KasidatePLUS</p>
+                    <p class="copyright">Copyright &copy;
+                        <script>
+                            var CurrentYear = new Date().getFullYear()
+                            document.write(CurrentYear)
+                        </script> Kasidate.me - KasidatePLUS
+                    </p>
                 </div>
             </div>
         </div>
@@ -644,6 +602,10 @@
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
+    <!-- RSS NEWS BAR-->
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+    <script src="/feed/app/sanooknews.js"></script>
+    <script src="/feed/app/blogapp.js"></script>
 </body>
 
 </html>

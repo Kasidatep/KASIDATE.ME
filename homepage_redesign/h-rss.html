@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/feed/assets/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap');
+    </style>
+    <title>RSS News Feed</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="/homepage_redesign/assets/css/uikit-ext-kasidate.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <div id="canvas">
+        <div class="flex-container">
+            <div style="flex-grow: 1" class="titlenewsbar">
+                <marquee  behavior="slide" direction="up"> READ</marquee>
+               
+                </div> 
+            <div style="flex-grow: 8">
+                <marquee>
+                    <div id="feed-textarea">
+                     
+                        <ul class="ul-inline-display"  uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500"> 
+                          <li id="display-date" class="display-date"  uk-scrollspy-class="uk-animation-slide-top"></li>
+                        </ul>
+                    </div>
+                </marquee> 
+            </div>
+          </div>
+           </div>
+           <div id="feed-w-warning">
+                     
+            <ul> 
+              <li id="display-date" class="display-date"></li>
+            </ul>
+        </div>
+
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+   
+    <script src="/feed/app/sanooknews.js"></script>
+</body>
+</html>

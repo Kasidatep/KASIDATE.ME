@@ -46,7 +46,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   height: 0;
 }
 .border{
-  background-color: #4615cc;
+  background-color: #0c3035;
   color: #eee;
   padding-left: 5px;
   padding-right: 5px;
@@ -112,7 +112,7 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -139,18 +139,18 @@ global styles
 */
 html,
 body {
-  background: #fff;
-  font-family: "Raleway", sans-serif;
+  background: rgb(255, 255, 255);
+  font-family: "Kanit" "Raleway", sans-serif;
 }
 
 ::selection {
-  background: #ff589e;
+  background: #3e393f;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #ff589e;
-  color: #fff;
+  background: #181415;
+  color: rgb(48, 28, 28);
 }
 
 .section {
@@ -206,7 +206,7 @@ body {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
-  color: #777;
+  color: rgb(56, 45, 45);
   line-height: 28px;
   letter-spacing: 1px;
   margin-bottom: 50px;
@@ -345,7 +345,7 @@ a.main-button-slider {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #ff589e;
+  background-color: #50092c;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -356,16 +356,16 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #8261ee;
+  background-color: #2e0606;
 }
 
 a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background-color: #110e18;
   text-transform: uppercase;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.74);
   letter-spacing: 0.25px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -374,7 +374,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #ff589e;
+  background-color:#2e0606;
 }
 
 button.main-button {
@@ -384,7 +384,7 @@ button.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #8261ee;
+  background-color: #39383b;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -395,7 +395,7 @@ button.main-button {
 }
 
 button.main-button:hover {
-  background-color: #ff589e;
+  background-color: #2e0606;
 }
      
 .scallout{
@@ -418,7 +418,7 @@ button.main-button:hover {
 /* Callout header */
 .scallout-header {
   padding: 25px 15px;
-  background: #555;
+  background: rgb(54, 48, 48);
   font-size: 30px;
   color: white;
 }
@@ -443,7 +443,7 @@ button.main-button:hover {
 
 /* Change color on mouse-over */
 .sclosebtn:hover {
-  color: lightgrey;
+  color: rgb(255, 255, 255);
 }
 
 /* 
@@ -453,7 +453,7 @@ header
 */
 .header-area {
   position: fixed;
-  top: 30px;
+  top: 40px;
   left: 50px;
   right: 50px;
   z-index: 100;
@@ -465,12 +465,12 @@ header
 }
 
 .header-area .main-nav {
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 40px;
   min-height: 80px;
-  background: #fff;
+  background: rgb(255, 255, 255);
 }
 
 .header-area .main-nav .logo {
@@ -530,7 +530,7 @@ header
 }
 
 .header-area .main-nav .nav li a:hover {
-  color: #ff589e;
+  color: #332d2f;
 }
 
 .header-area .main-nav .menu-trigger {
@@ -554,7 +554,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #3B566E;
+  background-color: #383838;
   display: block;
   position: absolute;
   width: 30px;
@@ -568,7 +568,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #3B566E;
+  background-color: #2b2c2e;
   display: block;
   position: absolute;
   width: 30px;
@@ -615,7 +615,7 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #3B566E;
+  background-color: #28292b;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -623,7 +623,7 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #3B566E;
+  background-color: #28292b;
 }
 
 .header-area.header-sticky {
@@ -644,7 +644,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ff589e;
+  color:  #28292b;
 }
 
 @media (max-width: 1200px) {
@@ -704,7 +704,7 @@ header
     padding: 0px !important;
     border: none !important;
     background: #fff !important;
-    color: #3B566E !important;
+    color: #28292b; !important;
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
@@ -717,7 +717,7 @@ header
   }
 }
 .version-web{
-  background-color: #3B566E;
+  background-color:  #28292b;;
   color: #fff;
   border-radius: 4px;
   margin-top: auto;
@@ -738,11 +738,14 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/banner-bg.png);
+  background-image: url(/assets/images/banner-bg\ \(2\).png);
+  background-size: 100%;
+  
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
   height: 100vh;
+  top: -50px;
 }
 
 .welcome-area .header-text {
@@ -863,7 +866,7 @@ about
 }
 
 .about-small-item:hover .icon {
-  background-color: #ff589e;
+  background-color: #3b383b;
 }
 
 .about-small-item .icon {
@@ -877,7 +880,7 @@ about
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background: #8261ee;
+  background: #0c0524;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -952,7 +955,7 @@ parallax & home seperator
   background-size: cover;
   background-position: center center;
   background-image: url(../images/work-process-bg.png);
-  z-index: 2;
+  filter: brightness(33%) contrast(79%) grayscale(26%) hue-rotate(112deg) invert(6%) saturate(2%);
   top: -20%;
   left: -20%;
 }
@@ -1049,7 +1052,7 @@ parallax & home seperator
   display: block;
   font-weight: 400;
   font-size: 14px;
-  color: #777;
+  color: rgb(53, 48, 48);
   letter-spacing: .75px;
 }
 
@@ -1125,7 +1128,10 @@ parallax & home seperator
   height: 32px;
   top: 140px;
   left: 70%;
-  background: url(../images/circle-dec.png) center center no-repeat;
+  background: url(../images/circle-dec.png) center center no-repeat filter: grayscale(100%);
+  ;
+  filter: grayscale(100%);
+
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1222,7 +1228,7 @@ team
   margin-left: 25px;
   margin-top: 25px;
   font-size: 30px;
-  color: #4E47DE;
+  color: #1d195e;
   text-align: center;
 }
 
@@ -1280,7 +1286,7 @@ team
   margin-bottom: 25px;
   font-weight: 400;
   font-size: 15px;
-  color: #777;
+  color: rgb(54, 52, 52);
   letter-spacing: 0.6px;
   line-height: 26px;
 }
@@ -1308,7 +1314,7 @@ pricing
 }
 
 .pricing-item.active .pricing-body .price-wrapper {
-  background-color: #ff589e;
+  background-color: #353334;
 }
 
 .pricing-item.active .pricing-body .price-wrapper .currency {
@@ -1351,7 +1357,7 @@ pricing
   text-align: center;
   padding-top: 20px;
   padding-bottom: 13px;
-  background: #8261ee;
+  background: #353536;
   width: 80%;
   margin: auto;
   margin-bottom: 40px;
@@ -1445,7 +1451,7 @@ blog
 }
 
 .blog-post-thumb h3 a:hover {
-  color: #ff589e;
+  color: #33272c;
 }
 
 .blog-post-thumb .text {
@@ -1498,7 +1504,7 @@ contact
 .contact-text {
   font-weight: 400;
   font-size: 14px;
-  color: #6F8BA4;
+  color: #323233;
   letter-spacing: 0.6px;
   line-height: 26px;
 }
@@ -1536,7 +1542,7 @@ footer
 --------------------------------------------- 
 */
 footer {
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  background-image: linear-gradient(127deg, #0e0513 0%, #38342f 91%);
   padding-top: 30px;
 }
 
@@ -1552,7 +1558,7 @@ footer .social li {
 }
 
 footer .social li a {
-  color: #9d5bd9;
+  color: #332f36;
    text-align: center;
   background-color: #fff;
   width: 36px;
@@ -1568,13 +1574,13 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  background-color: #ff589e;
+  background-color: #4b4e4e;
   color: #fff;
 }
 
 footer .copyright {
   text-align: center;
-  border-top: 1px solid rgba(250,250,250,0.2);
+  border-top: 1px solid rgba(230, 208, 208, 0.2);
   margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1604,14 +1610,14 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(135deg, #a759d1 0%, #8261ee 100%);
+  background-image: linear-gradient(135deg, #141413 0%, #323136 100%);
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   position: fixed;
   z-index: 9999;
-  color: #fff;
+  color: rgb(11, 219, 46);
 }
 
 #preloader .jumper {
