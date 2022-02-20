@@ -70,11 +70,13 @@ ul > li{
     box-sizing: border-box;
     width: 100%;
     height: 2em;
-    background-color:rgb(42, 39, 49);
+    background-color:rgba(0, 0, 0, 0.479);
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     z-index: 100 !important;
+    backdrop-filter: blur(1px);
+    
 }
 
 .flex-container-bar {
@@ -85,15 +87,17 @@ ul > li{
     position: sticky;
     top: 0;
     z-index: 100 !important;
+    
   }
   
   .flex-container-bar > div {
-    background-color: rgba(230, 238, 245, 0.986);
+    background-color: rgba(255, 255, 255, 0.747);
+    
   }
   .flex-container-bar .titlenewsbar{
     font-weight: 700;
     font-size: 1.2em;
-    background-color:rgb(42, 39, 49);
+    background-color:rgba(0, 0, 0, 0);
     color: rgb(243, 243, 247);
     display: inline;
     height: 1.3em;

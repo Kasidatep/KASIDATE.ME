@@ -13,7 +13,7 @@ feednami.load(barurl)
      
       li.innerHTML = `
       <span class="uk-label"> NEWS </span>
-      <a href="${entry.link}" class="uk-text-default-barc uk-ext-rss-layout uk-text-primary uk-link-heading">&nbsp;  ${entry.description}
+      <a href="${entry.link}" class="uk-text-default-barc uk-ext-rss-layout uk-text-emphasis uk-link-heading">&nbsp;  ${entry.description}
        </a>*** &nbsp;&nbsp;&nbsp;&nbsp;
          
       `;
